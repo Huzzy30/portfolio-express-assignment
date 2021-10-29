@@ -8,9 +8,8 @@ var app = express();
 // view engine setup
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static("public"));
 app.set("views", "views");
 app.set('view engine', 'ejs');
 app.use("/",router);
-app.use(express.static('public'))
+app.use(express.static('public'));
 module.exports = app;
